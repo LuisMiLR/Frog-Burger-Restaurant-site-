@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat',sans-serif;
+}
+nav {
+    /* pour aligner tous les élements*/
+    display: flex;
+    /* si le navigateur ne peut les aligner on va les empiler*/ 
+    flex-wrap: wrap;
+    /*centrer les élèments*/
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #575656ce;
+    /* bordure à notre barre de navigation*//*distinguer la barre de nav à notre header par la suite*/
+   
+}
+    /*modifier le style du titre de la barre de nav*/
+nav h1 {
+    color: #121111;;
+    /*modif de la police de ce texte*/
+    font-family:"playfair Display", sans-serif ;
+    /*modif de la taille du texte*/
+    font-size: 50 px;
+    margin-left: 10px;
+    
+}
+nav h1 span { 
+    color:rgb(5, 114, 5)
+}
+nav .logo {
+    height: 50px;
+}
+nav .onglets {
+    /*aligner les onglets au titres*/
+    margin-top: 3px;
+    margin-left: 400px;
+} 
+    /*modifier nos onglets, pour cela je déclare la div onglet à l intérieur de notre barre de navi et je déclare les balises a de notre barre de nav c'est a dire tous les liens*/
+nav .onglets a {
+    /*enlever le soulignement des liens*/
+    text-decoration:none;
+    /*mettre la couleur en black*/
+    color: #000;
+    /* espacement entre les liens (marge exterieur de 10px*/
+    margin-right: 10px;
+    /*espacer l'enderligne, soulignement sous chaque liens, marge intérieur 1px*/
+    border-bottom: 1px solid rgb(19, 19, 19);
+    padding-bottom: 5px;
+}
+.onglets a:hover { 
+    color:rgb(5, 114, 5);
+    font-weight: 1.5em;    
+}
+header {
+    /*aligner tout les élèments*/
+    display: flex;
+    /* ça les empile en colonne*/
+    flex-direction: column;
+    /*center les élèment au niveau du header*/
+    align-items: center;
+    /*image background header*/
+    background: url("image/tomatebackground.jpg");
+    /*pour que l'image prenne tout le header*/
+    background-size: cover; 
+    box-shadow: 0 0 10px rgba(0,0,0,2);
+    opacity: 0.97;
+    /*changer la couleur du texte sur header*/
+    color:#fff;
+    /*marge intérieur */
+    padding: 65px;
+    margin-bottom: 20px;    
+}
+header h1 {
+     /*meme police que H1*/
+    font-family:"playfair Display", sans-serif ;
+    font-size: 50px;   
+}
+header h1 span { 
+    color: rgb(5, 114, 5);
+}
+header h4 {
+    font-family: 'Montserrat',sans-serif;
+    /*reduire l'espace entre le h1 et le h4*/
+    margin-top: -20px;
+    font-size: 20px;
+    /*centrer le text en format mobile*/
+    text-align:center;
+    border-bottom: 1px solid #fff;
+}
+/* mise en forme du bouton parcourir*/
+header button {
+/*une marge intérieur en haut et en bas de 10px et une marge int. droite et gauche 20px*/
+    padding: 10px 15px;
+    background-color:rgba(31, 32, 31, 0.753);
+    /* color: #fffbfb;  */
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat',sans-serif;
+    outline:none;  
+}
+button a {
+    text-decoration: none;
+    color: rgb(248, 241, 241);  
+}
+button:hover {
+    background-color: rgba(0, 128, 0, 0.623);
+}
+.section1 {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 30px; 
+}
+.containerHistoire {
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 35%;
+    border-radius: 6px;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+.containerCard {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-left: 90px;
+    margin-top: 20px;   
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+.img1{ 
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    
+}
+.img2{
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+}
+.img3{
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+}
+.left {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 6px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.right {
+    width: 300px;
+    height: 200px;  
+}
+.right :hover {
+    width: 320px;
+    box-shadow: 0 0 8px rgb(5, 114, 5);
+    
+}
+.histoire {
+display: flex; 
+font-size: 15px;
+flex-direction: column;
+justify-content: flex-start;
+margin-top: 15%;
+padding: 10px;
+color: rgb(8, 8, 8);
+border-radius: 6px;
+padding-left: 20px;
+}
+.histoire h1 {
+    display: flex;
+    justify-content: center;
+}
+.histoire p:nth-child(3){
+    color: rgb(5, 114, 5);;
+}
+.section2 {
+display:flex;
+justify-content: center; 
+text-align: center; 
+margin-top: 50px;
+padding-top: 30px;
+padding-bottom: 20px;
+background-color: #0f0f0f1f;
+color: rgb(21, 21, 21);       
+}
+#contact { 
+    margin-top: 20px;
+    margin-right: 280px;
+    margin-left: -150px;
+}
+footer {
+    padding-bottom: 10px;
+    border-top: 3px solid #575656;
+    background-color: rgb(18, 17, 17);
+    color: #fff;
+}
+footer p {
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    padding-top: 10px;    
+}
+/*---------------------la carte ------------------*/
+
+.laCarte {
+    font-size: 15px;
+    margin-top: 50px;
+    background-color: #0f0f0f1f;
+}
+.laCarte h1{
+    text-align: center;
+}
+.containerSpeHiver{
+    display: flex;
+    align-content: space-between;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.specialHiver {
+    flex-wrap: wrap;
+   
+    width: 35%;
+    font-size: 15px;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    margin-left: 190px; 
+    margin-right: 30px;
+}
+h4 {
+    font-size: larger; 
+    margin-top: 50px;
+} 
+
+h5 {
+    padding-top: -10px;
+    background-color: #0f0f0f1f;   
+}
+h5:first-child {
+    margin-bottom: 10px;
+} 
+.card1 { 
+    display: flex;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+   margin-left: 80px;
+}
+.image1 {
+height: 400px;
+width: 400px;
+border-radius: 6px;
+}
+.image1 :hover{
+    width: 440px;
+    box-shadow: 0 0 5px rgb(5, 114, 5);
+}
+.containerLaCarte {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.laCarteMenu {
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 50%;
+    margin-bottom: 50px;   
+}
+.avise {  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 50%;
+   margin-left: 40px;
+   margin-top: 50px; 
+   margin-bottom: 30px;   
+}
+.avise :hover{
+    width: 370px;
+    box-shadow: 0 0 10px rgb(5, 114, 5);
+
+}
+.imgs1{
+    width: 350px;
+    border-radius: 6px;
+}
+.imgs2 {
+    width: 350px;
+    border-radius: 6px;
+}
+.imgs3 {
+    width: 350px;
+    border-radius: 6px;
+}
+.lacarteMenu h2 {
+    margin-top: 50px;
+    background-color: #0f0f0f1f;
+}
+button .carte {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+ .lowPage { 
+display: flex;
+flex-direction: row;
+justify-content: center;
+}    
+.social a { 
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+i.fa-solid.fa-chevron-up {
+    padding: 8px;
+    position: absolute;
+    top: 200vh;
+    color: rgb(5, 114, 5);
+    background-color: #78757550;
+    right: 7vh;
+    border-radius: 06px;
+}
+/*Scrollbar CSS*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(5, 114, 5) ;
+}
